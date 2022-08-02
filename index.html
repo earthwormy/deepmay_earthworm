@@ -5,59 +5,115 @@
 <head>
     <title> Earthworm's page</title>
     <link rel="stylesheet" href="style.css">
-
-mmmm  is the head
-<style>
-    h1 {
-      color: red;
-    }
-  </style>
-<!--this s the head-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./myCode.js"></script>
 </head>
 
 <body>
-    <h1>Real Sick Page Name</h1>
-    this is the body. lots of text, many words
-    this is the body. lots of text, many words
-    this is the body. lots of text, many words
-    this is the body. lots of text, many words
-    this is the body. lots of text, many words
-    this is the body. lots of text, many words
-<img src="http://placekitten.com/200/300" style="position: sticky; top: 4em; left: 3em"/>
-this is the body. lots of text, many wordsthis is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
-this is the body. lots of text, many words
+  <!-- LOGO TOP -->
+  <div class="container">
+    <img src="f4l.png" class="center">
+  </div>
 
-<h2> heading 2</h2>
-<ol class="boxybox">
-<li>first step</li>
-<li> 2nd step</li>
-</ol>
+<!--/*donate etc buttons*/ -->
+<div class="flex-container">
+  <div class="flex-child-img">
+    <a href="https://airtable.com/shrY151RWK9aBJBkF">volunteer</a>
+  </div>
+  <div class="flex-child-img">
+    <a href="https://airtable.com/shrBg3BzmxqI4yvyp?prefill_Food%20Restrictions%3F=No,%20anything%20is%20fine"> Request deliveries</a>
+  </div>
+  <div class="flex-child-img">
+    <a href="https://opencollective.com/food4life">donate</a>
+  </div>
+</div>
 
-<h2> heading 2</h2>
-<ul class="boxybox">
-<li>cookie step</li>
-<li> milk step</li>
-</ul>
-<h2> heading 2</h2>
-<p style="margin: 5em;">a  quick and simple service for getting pictures of kittens for use as placeholders in your designs or code. Just put your image size (width & height) after our URL and you'll get a placeholder. A  quick and simple service for getting pictures of kittens for use as placeholders in your designs or code. Just put your image size (width & height) after our URL and you'll get a placeholder.  quick and simple service for getting pictures of kittens for use as placeholders in your designs or code. Just put your image size (width & height) after our URL and you'll get a placeholder.
+<!-- ABOUT SECTION -->
+<div class="flex-container">
+  <div class="flex-child-img">
+      <img src="distro.jpg">
+  </div>
+  <div class="flex-child-words">
+    <h2 class="imgtxt"> Free grocery giveaways</h2>
+    <p class="captext">Free food for whoever shows up. <br>
+      No questions asked, no one turned away. <br>
+      Five weekly locations around Atlanta.<br>
+      Come get food, help out, or both!<br>
+      Just show up:
+      <ul class="captext">  
+        <li>Lakewood: Every Saturday 12-2:30, corner of Lakewood and Rhodesia</li>
+        <li>Edgewood: Every Sunday 1-3:00, corner of Mayson and Hardee </li>
+        <li>Clarkston: Every Tuesday 4:30-6, 4540 E Ponce de Leon Ave</li>
+        <li>East Atlanta: Every Wednesday 6:00, ICP trailhead park parking lot</li>
+        <li>Westlake: Every Thursday 2-3:30, 1616 Joseph E Boone </li>
+      </ul>
 </p>
-<a href="https://en.wikipedia.org/wiki/Main_Page">wikipedia</a>
-<p style="margin: 5em;">this <em>word</em> will be in italics</p>
+  </div>  
+</div>
 
-<h2> heading 2</h2>
-<h3> heading 3</h3>
-<img src="http://placekitten.com/200/300" style="position: absolute;
-top: 6em; left: 3em;"/>
-<h4> heading 4</h4>
+<div class="flex-container">
+  <div class="flex-child img">
+      <img src="fnb.JPG">
+  </div>
+  <div class="flex-child words">
+    <h2 class="imgtxt"> Serving meals</h2>
+    <p class="captext">Free food for whoever's hungry</p>
+
+		<canvas id="canvas" width="400" height="400">
+		</canvas>
+		<script>
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+			//grapes
+			context.beginPath();
+			context.fillStyle = 'purple';
+			  context.strokeStyle = 'black';
+		    context.arc(150, 150, 21, 0, 2*Math.PI, true);	
+		    context.arc(180, 150, 20, 0, 2*Math.PI, true);	
+		    context.arc(120, 150, 20, 0, 2*Math.PI, true);	
+		    context.arc(95, 150, 22, 0, 2*Math.PI, true);	
+		    context.arc(110, 185, 22, 0, 2*Math.PI, true);	
+		    context.arc(140, 185, 22, 0, 2*Math.PI, true);	
+		    context.arc(170, 185, 20, 0, 2*Math.PI, true);
+		    context.arc(130, 215, 19, 0, 2*Math.PI, true);
+		    context.arc(150, 215, 19, 0, 2*Math.PI, true);	
+		    context.arc(139, 237, 19, 0, 2*Math.PI, true);	
+		    context.fill();
+        context.stroke();
+
+		    //stem
+		    context.strokeStyle = 'green';
+			context.arc(10, 133, 100, 5, 2*Math.PI);	
+			context.stroke();
+		</script>
+  </div>  
+</div>
+
+<div class="flex-container">
+  <div class="flex-child img">
+      <img src="IMG_0210.JPG">
+  </div>
+  <div class="flex-child words">
+    <h2 class="imgtxt"> Building community</h2>
+    <p class="captext"> Our core ethic calls on us to treat everyone with dignity and respect. 
+      We encourage everyone to help and take food. 
+      We do not believe in creating divisions between "volunteers" and "beneficiaries"</p>
+  </div>  
+</div>
+
+<div class="flex-container">
+  <div class="flex-child img">
+      <img src="2020-05-28 17.42.21.jpg">
+  </div>
+  <div class="flex-child words">
+    <h2 class="imgtxt"> Delivering groceries</h2>
+    <p class="captext"> For people who can't come to the grocery giveaways, deliveries of 
+      pre-made grocery boxes still happen as our limited volunteer resources permit.</p>
+  </div>  
+</div>
+
+<footer class="text-center" id="footer">
+    We will survive by helping each other
+</footer>
 
 </body>
 </html>

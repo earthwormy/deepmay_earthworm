@@ -1,48 +1,54 @@
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgba(197, 229, 248, 0.945);
+/* for the header */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: aquamarine;
+    box-align: center;
+    border: 10px solid blue;
 }
 
-ol {
-    margin: 10rem;
-    margin-left: 15em;
-    background-color:white;
-    border: 1px solid green;
-    text-transform: uppercase;
-    padding: 7em;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
 }
 
-p { 
-    border: 1px solid red; 
-    margin-left: 15em;
-}
-
-.boxybox { 
-    margin-left: 15em;
-    border: 1px solid green; 
+img {
+    width: 45rem;
+    padding: 2em;
 }
 
 h2 {
-    border: 1px solid black;
-    color: blueviolet;
-    margin-left: 15em;
-    font-weight: bold;
+    font-size: 6em;
 }
-a:hover {
-    text-decoration: none;
-    color: brown;
-    background-color: paleturquoise;
-    padding: 5em;
+.captext {
+     font-size: 2em;
 }
-a {
-    color: chartreuse;
-    font-size: large;
-    font-style: italic;
-    font-weight: bolder;
-    margin-left: 15em;
-    background-color: darkmagenta;
-    padding: 3em;
-    margin: 5em;
-    border: 7px solid;
+
+/* flexbox for side by side boxes */
+.flex-container {
+    display: flex;
+}
+
+.flex-child-img {
+    flex: 1;
+    /*border: 2px solid yellow;*/
+}  
+
+.flex-child-words {
+    flex: 2;
+    /*border: 2px solid yellow;*/
+}  
+
+.flex-child:first-child {
+    margin-right: 2px;
+} 
+
+//footer
+
+.text-center {
+    text-align: center;
 }
